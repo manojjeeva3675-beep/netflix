@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+
+    background: #050505;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    color: #e50914;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-right a {
+    color: #ccc;
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.nav-right a:hover {
+    color: #e50914;
+}
+
+
+/* LOGOUT CONTAINER */
+
+.logout-container {
+    min-height: calc(100vh - 180px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 20px;
+}
+
+
+/* LOGOUT BOX */
+
+.logout-box {
+    width: 450px;
+
+    background: #151515;
+
+    border: 1px solid #292929;
+
+    border-radius: 12px;
+
+    padding: 50px 40px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+
+/* ICON */
+
+.logout-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e50914;
+
+    font-size: 35px;
+}
+
+
+/* TEXT */
+
+.logout-box h1 {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.logout-box p {
+    color: #999;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.logout-btn,
+.cancel-btn {
+    padding: 13px 28px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* LOGOUT */
+
+.logout-btn {
+    background: #e50914;
+
+    color: white;
+}
+
+.logout-btn:hover {
+    background: #f40612;
+
+    transform: scale(1.05);
+}
+
+
+/* CANCEL */
+
+.cancel-btn {
+    background: #333;
+
+    color: white;
+
+    border: 1px solid #555;
+}
+
+.cancel-btn:hover {
+    background: #555;
+
+    transform: scale(1.05);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #050505;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-top: 1px solid #222;
+}
+
+.footer-logo {
+    color: #e50914;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #777;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+footer p {
+    color: #555;
+
+    margin-top: 20px;
+
+    font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-right {
+        gap: 12px;
+    }
+
+    .logout-box {
+        width: 100%;
+
+        padding: 40px 25px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .logout-btn,
+    .cancel-btn {
+        width: 100%;
+    }
+}

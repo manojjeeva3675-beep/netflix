@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Settings</title>
+    <link rel="stylesheet" href="set.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">NETFLIX</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Anime</a>
+            <a href="#">Media</a>
+        </div>
+
+        <input type="text" placeholder="Search">
+    </nav>
+
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h3>MENU</h3>
+
+        <a href="http://127.0.0.1:5500/netflix.html#">🏠 Home</a>
+        <a href="#">🎬 Movies</a>
+        <a href="#">📺 TV Shows</a>
+        <a href="#">🍿 Anime</a>
+        <a href="#">🔥 Trending</a>
+        <a href="#">❤️ My List</a>
+        <a href="#" class="active">⚙️ Settings</a>
+    </aside>
+
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <h1>Settings</h1>
+        <p class="subtitle">Manage your Netflix preferences</p>
+
+
+        <!-- PROFILE -->
+        <section class="box">
+            <h2>👤 Profile</h2>
+
+            <div class="profile">
+                <div class="avatar">M</div>
+
+                <div>
+                    <h3>Manoj</h3>
+                    <p>Personal Profile</p>
+                </div>
+
+                <button>Edit</button>
+            </div>
+        </section>
+
+
+        <!-- ACCOUNT -->
+        <section class="box">
+            <h2>🔐 Account</h2>
+
+            <div class="row">
+                <div>
+                    <h3>Email</h3>
+                    <p>manoj@example.com</p>
+                </div>
+
+                <button>Change</button>
+            </div>
+
+            <div class="row">
+                <div>
+                    <h3>Password</h3>
+                    <p>••••••••</p>
+                </div>
+
+                <button>Change</button>
+            </div>
+        </section>
+
+
+        <!-- LANGUAGE -->
+        <section class="box">
+            <h2>🌐 Language</h2>
+
+            <div class="row">
+                <div>
+                    <h3>Display Language</h3>
+                    <p>Select your preferred language</p>
+                </div>
+
+                <select>
+                    <option>English</option>
+                    <option>Tamil</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+        </section>
+
+
+        <!-- PLAYBACK -->
+        <section class="box">
+            <h2>▶️ Playback</h2>
+
+            <div class="row">
+                <div>
+                    <h3>Autoplay Next Episode</h3>
+                    <p>Automatically play the next episode</p>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="row">
+                <div>
+                    <h3>Autoplay Previews</h3>
+                    <p>Play previews while browsing</p>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+            </div>
+        </section>
+
+
+        <!-- NOTIFICATION -->
+        <section class="box">
+            <h2>🔔 Notifications</h2>
+
+            <div class="row">
+                <div>
+                    <h3>New Releases</h3>
+                    <p>Get updates about new movies and shows</p>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span></span>
+                </label>
+            </div>
+        </section>
+
+
+        <!-- SECURITY -->
+        <section class="box">
+            <h2>🛡️ Privacy & Security</h2>
+
+            <div class="row">
+                <div>
+                    <h3>Manage Devices</h3>
+                    <p>See devices using your account</p>
+                </div>
+
+                <button>Manage</button>
+            </div>
+
+            <div class="row">
+                <div>
+                    <h3>Sign Out All Devices</h3>
+                    <p>Sign out from all devices</p>
+                </div>
+
+                <button class="danger">Sign Out</button>
+            </div>
+        </section>
+
+
+        <button class="save">Save Changes</button>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>NETFLIX</h2>
+
+        <div>
+            <a href="#">FAQ</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <p>© 2026 Netflix Media Website</p>
+    </footer>
+
+</body>
+</html>
